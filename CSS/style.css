@@ -194,7 +194,6 @@ a.skip{
 .hole h2, .gallery-text-box h2, .contact-header, .text_block h2{
     font-family: 'Raleway', sans-serif;
     margin-bottom: 5px;
-    /* text-decoration: underline rgb(132, 149, 223) solid 3px; */
     text-decoration: underline #adc0c3 solid 3px;
     text-transform: uppercase;
     padding-bottom: 10px;
@@ -275,7 +274,6 @@ input[type=text], select {
 
   .project-container{
       background: rgba(255, 255, 255, 0.5);
-      /* padding: 20px; */
       margin: 20px;
       border-radius: 5px;
   }
@@ -284,7 +282,6 @@ input[type=text], select {
     padding: 20px; 
     background: #fff;
     width: inherit;
-    margin-bottom: 0px;
     border-radius: 5px;
   }  
 
@@ -331,7 +328,8 @@ input[type=text], select {
       position: relative;
   }
 
-  .gallery-img span{
+  /* hover feature in development */
+  /* .gallery-img span{
     display: none;
     position: absolute;
     bottom: 0;
@@ -344,7 +342,7 @@ input[type=text], select {
       height: 100%;
       width: contain;
       text-align: center;
-  }
+  } */
 
   #haley{
       align-self: center;
