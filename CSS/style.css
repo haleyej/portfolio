@@ -120,9 +120,10 @@ a.skip{
 
 /* Landing Page */
 
+
 .landing{
     display: grid;
-    grid-template-rows: 50% 45%;
+    grid-template-rows: 400px 45%;
     grid-template-columns: 40% 40%;
     grid-gap: 10px;
     margin-top: 50px;
@@ -136,6 +137,10 @@ a.skip{
     border-radius: 5px;
     overflow: hidden;
     align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }  
 
 .text_block_img img{
@@ -328,21 +333,30 @@ input[type=text], select {
       position: relative;
   }
 
+  .gallery-img:hover{
+      opacity: 0.25;
+      background-color: rgb(255, 255, 255);
+      -webkit-transition: background-color 2s ease-out;
+      -moz-transition: background-color 2s ease-out;
+      -o-transition: background-color 2s ease-out;
+      transition: background-color 2s ease-out;
+  }
   /* hover feature in development */
-  /* .gallery-img span{
+  
+/* .gallery-img span{
     display: none;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     padding: 10px;
-    background: rgba(255,255,255,.8);
+    margin: 10px;
+    background: rgba(175, 224, 208, 0.8);
+    width: fit-content;
   }
 
   .gallery-img:hover span{
       display: block;
-      height: 100%;
-      width: contain;
+      height: fit-content;
       text-align: center;
-  } */
+  }  */
 
   #haley{
       align-self: center;
