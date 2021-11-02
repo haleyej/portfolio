@@ -260,6 +260,11 @@ input[type=text], select {
     background-color: #386a81;
   }
 
+  #additional-contact{
+      margin-top: -40px;
+      font-size: 0.75em;
+  }
+
 
   /* Projects */
 
