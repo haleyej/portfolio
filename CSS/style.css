@@ -68,6 +68,7 @@ a:hover{
 
 header a, header a:hover, header a:visited, h1 a{
     text-decoration: none;
+    -webkit-text-decoration: none;
     color: hsl(240, 8%, 29%);
 }
 
@@ -80,11 +81,13 @@ header a, header a:hover, header a:visited, h1 a{
 .nav_item a{
     margin-left: 20px; 
     text-decoration: none;
+    -webkit-text-decoration: none;
     color: #43434f;
     font-size: 0.8em;
 } 
 
 .nav_item a:hover{
+    -webkit-text-decoration: underline;
     text-decoration: underline;
     color: #43434f;
 }
@@ -92,6 +95,7 @@ header a, header a:hover, header a:visited, h1 a{
 #current{
     color: #54547c;
     text-decoration: underline 2px solid #54547c;
+    -webkit-text-decoration: underline 2px solid #54547c;
 }
 
 header > h1{
@@ -116,6 +120,7 @@ a.skip{
     top:20px;
     color: black;
     text-decoration-style: solid;
+    -webkit-text-decoration-style: solid;
   }
 
 /* Landing Page */
@@ -202,6 +207,7 @@ a.skip{
     font-family: 'Raleway', sans-serif;
     margin-bottom: 5px;
     text-decoration: underline #adc0c3 solid 3px;
+    -webkit-text-decoration: underline #adc0c3 solid 3px;
     text-transform: uppercase;
     padding-bottom: 10px;
     line-height: 1.5em;
@@ -215,6 +221,7 @@ a.skip{
 .hole li ul a, .hole li ul a:visited{
     color: #000;
     text-decoration: none;
+    -webkit-text-decoration: none;
 }
 
 .hole li ul a:hover{
@@ -270,7 +277,7 @@ input[type=text], select {
       margin-top: -40px;
       font-size: 0.75em;
   }
-  
+
 
 
   /* Projects */
