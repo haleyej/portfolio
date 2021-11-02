@@ -123,10 +123,11 @@ a.skip{
 
 .landing{
     display: grid;
-    grid-template-rows: 400px 45%;
+    grid-template-rows: 400px 50%;
     grid-template-columns: 40% 40%;
     grid-gap: 10px;
     margin-top: 50px;
+    margin-bottom: 100px;
     justify-content: center;
     align-content: center; 
 }
@@ -154,6 +155,7 @@ a.skip{
     padding: 20px;
     border-radius: 5px;
     line-height: 1.5;
+    height: auto;
 }
 
 /* container thing */
@@ -268,18 +270,17 @@ input[type=text], select {
       margin-top: -40px;
       font-size: 0.75em;
   }
+  
 
 
   /* Projects */
 
   #projects{
       background: transparent;
-      margin: 30px;
   }
 
   .project-container{
       background: rgba(255, 255, 255, 0.5);
-      margin: 20px;
       border-radius: 5px;
   }
 
