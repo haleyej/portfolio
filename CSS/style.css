@@ -27,6 +27,15 @@ body{
     background: #A4B1A0;
     border-radius: 3px;
   }
+
+/* Selection Color */
+
+::selection {
+    background: #b2cac5; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #b2cac5; /* Gecko Browsers */
+  }
   
 
   body > header{
@@ -89,9 +98,9 @@ header a, header a:hover, header a:visited, h1 a{
 }
 
 #current{
-    color: #54547c;
-    text-decoration: underline 2px solid #54547c;
-    -webkit-text-decoration: underline 2px solid #54547c;
+    color: #2d2d6e;
+    text-decoration: underline 2px solid #2d2d6e;
+    -webkit-text-decoration: underline 2px solid #2d2d6e;
 }
 
 header > h1{
@@ -139,10 +148,6 @@ a.skip{
     border-radius: 5px;
     overflow: hidden;
     align-items: center;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }  
 
 .text_block_img img{
@@ -152,12 +157,64 @@ a.skip{
 .text_block{
     grid-column: 1 / 3;
     grid-row: 2 / -1; 
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 1.0);
     padding: 20px;
     border-radius: 5px;
     line-height: 1.5;
     height: auto;
 }
+
+/* landing flip card */
+
+.landing-flip-card{
+    background: transparent;
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.landing-inner{
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    text-align: center;
+    transition: transform 0.8s;
+}
+
+.landing-flip-card:hover .landing-inner {
+    transform: rotateY(180deg);
+  }
+
+/* Position the front and back side */
+.landing-front, .landing-back {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 5px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .landing-front {
+    background-color: #bbb;
+    color: black;
+    transform: rotateY(0deg);
+  }
+
+  .landing-front img{
+      border-radius: 5px;
+      width: 100%;
+      height: 100%;
+  }
+  
+  /* Style the back side */
+  .landing-back {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: rotateY(180deg);
+    height: 100%;
+    width: 100%;
+  }
 
 /* container thing */
 
@@ -365,6 +422,11 @@ input[type=text], select {
       height: 150px;
       margin-bottom: 10px;
       margin-top: -50px;
+      transition: transform .7s ease-in-out;
+  }
+
+  #haley:hover{
+      transform:rotate(360deg);
   }
 
   #haley-facts{
@@ -452,3 +514,10 @@ footer{
       padding: 15px;
 
   }
+
+  @media screen and (prefers-reduced-motion: reduce){
+    #haley:hover{
+        transform: none;
+    }
+} 
+}
