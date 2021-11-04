@@ -60,7 +60,7 @@ header{
 }
 
 a, a:visited{
-    color: #3b7f9e;
+    color: #2283af;
 }
 
 a:hover{
@@ -314,7 +314,7 @@ input[type=text], select {
   
   input[type=submit] {
     width: 100%;
-    background-color: #4c90af;
+    background-color: #3e94bd;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -348,7 +348,7 @@ input[type=text], select {
     margin-bottom: 50px;
   }  
 
-  h3.project-item{
+  h2.project-item{
       font-family: 'Raleway', sans-serif;
       margin-bottom: 7.5px;
       padding: 20px 20px 20px 20px;
@@ -520,4 +520,3 @@ footer{
         transform: none;
     }
 } 
-}
