@@ -61,6 +61,7 @@ header{
 
 a, a:visited{
     color: #157eaf;
+    /* why iis github so hard */
 }
 
 a:hover{
