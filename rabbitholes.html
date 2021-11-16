@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Rabbit Holes</title>
   </head>
   <body>
     <a class = "skip" href="#rabbit-holes">Skip to Main Content</a>
+    <div id='loadpage'>
+      <div id="loader"></div>
+    </div>
     <header>
     <h1><a href='index.html'>Haley Johnson</a></h1>
       <nav>
@@ -27,21 +30,25 @@
     </nav>
   </header>
     <main>
-    <div class='books-container' id='#rabbit-holes'>
-      <div class='book-item'>
-        <h2>Reading:</h2>
-          <p>This summer I decided to read a book every week! I ended up only missing about one week of reading, which considering
-          how much I worked and traveled is pretty good! Here are my reads (mostly in order): 
-        </p>
+    <div class='books-container'>
+      <div class='book-item' id='rabbit-holes'>
+        <div>
+          <h2>Reading:</h2>
+            <p>This summer I decided to read a book every week! I ended up only missing about one week of reading, which considering
+            how much I worked and traveled is pretty good! Here are my reads (mostly in order): 
+          </p>
+        </div>
       </div>
 
       <div class='book-item'>
         <img src='books/normal_people.jpg' alt='Book cover for Normal People'>
         <div class='book-info'>
           <h2>Normal People by Sally Rooney</h2>
-          <p>★★★★★</p>
+          <p><b>Rating:</b> ★★★★★</p>
           <p>I read Normal People in two sittings. The hype is real and this book is fantastic – I 
-            even convinced my mom to read it. 
+            even convinced my mom to read it. I unfortunately haven't gotten around to watching the TV
+            adaption (I'm not a big TV person if that's not obvious by how much I read this summer), but I've heard good things
+            about it.
           </p>
         </div>
       </div>
@@ -50,7 +57,7 @@
         <img src='books/invsible_women.jpg' alt='Book cover for Invisible Women'>
         <div class='book-info'>
           <h2>Invisible Women: Data Bias in a World Designed for Men by Caroline Criado Perez</h2>
-          <p>★★★☆☆</p>
+          <p><b>Rating:</b> ★★★☆☆</p>
           <p>This book was very. . . underwhelming. It touches on lots of important areas – ranging from product design to 
             transportation date to sampling in clinical trials – but jumps from one statistic to another without any real analysis. 
             This book seemed like it just wanted to prove data bias against women is real without deeply engaging with the subject.
@@ -62,10 +69,10 @@
         <img src='books/trick_mirror.jpg' alt='Book cover for Trick Mirror'>
         <div class='book-info'>
           <h2>Trick Mirror by Jia Tolentino</h2>
-          <p>★★★★★</p>
+          <p><b>Rating:</b> ★★★★★</p>
           <p>I first became obsessed with Jia Tolentino's work when I listened to a podcast episode where 
             she talked about using Bitcoin to buy drugs in 2015. Needless to say her essay collection did not disapoint. 
-            She writes about everything from marriage to sexual assault on campus to the wellnss industry. If there's 
+            She writes about everything from marriage to sexual assault on college campuses to the wellnss industry. If there's 
             one book from this summer I'll definetly re-read, it's this one. 
 
           </p>
@@ -76,11 +83,12 @@
         <img src='books/norweigan_wood.jpg' alt='Book cover for Norweigan Wood'>
         <div class='book-info'>
           <h2>Norwegian Wood by Haruki Murakami</h2>
-          <p>★★★★☆</p>
+          <p><b>Rating:</b> ★★★★☆</p>
           <p>Murakami masterfully captures feelings of isolation, nostalgia and identity. This is the first 
             Murakami that I've read, and I was instantly captivated by the dream-like quality of his writing. 
             If you appreciate writing as a craft and an author's ability to evoke emotion, you'll love this. 
-            If you're more of a plot-driven person, this might not be for you. 
+            If you're more of a plot-driven person, this might not be for you. Also minus 1 point because his 
+            descriptions of female characters are vaguely sexist.
           </p>
         </div>
       </div>
@@ -89,7 +97,7 @@
         <img src='books/ivory_tower.jpg' alt='Book cover for In the Shadow of the Ivory Tower'>
         <div class='book-info'>
           <h2>In the Shadow of the Ivory Tower: How Universities Are Plundering Our Cities By Davarian L. Baldwin</h2>
-          <p>★★★☆☆</p>
+          <p><b>Rating:</b> ★★★☆☆</p>
           <p>I had heard good things about this book, but it ultimately feel short for me. 
             As someone who's not super familiar with urban planning and zoning laws, this book tried to cover too much 
             too fast.  
@@ -101,10 +109,11 @@
         <img src='books/shape.jpg' alt='Book cover for Shape'>
         <div class='book-info'>
           <h2>Shape: The Hidden Geometry of Information, Biology, Strategy, Democracy, and Everything Else by Jordan Ellenberg</h2>
-          <p>★★★★☆</p>
+          <p><b>Rating:</b> ★★★★☆</p>
           <p>Not to be *that person* but if you can get throug the first ~100-150 pages this book is great. 
-            The fantastic and insightful chapters on modeling pandemics, gerrymandering and game theory get bogged
-            down but some well-written but dense geometrics proofs at the beginning. 
+            The fantastic and insightful chapters on modeling pandemics, gerrymandering and game theory in the later
+            half of the book get bogged down but some dense geometrics proofs at the beginning (he tries to prove that
+            straws have two holes ??). 
           </p>
         </div>
       </div>
@@ -113,9 +122,10 @@
         <img src='books/drunkards_walk.jpg' alt="Book cover for The Drunkard's Walk">
         <div class='book-info'>
           <h2>The Drunkard's Walk: How Randomness Rules Our Lives by Leonard Mlodinow</h2>
-          <p>★★★★★</p>
+          <p><b>Rating:</b> ★★★★★</p>
           <p>I loved this book, but I also love statistics so take my opinion with a grain of salt. 
-            This is a good mix of the history of statistics and real-world applications of statistics and randomness.
+            This is a good mix of the history of statistics and real-world applications. The last two 
+            paragraphs are weirdly dark and depressing but honestly I didn't mind. 
           </p>
         </div>
       </div>
@@ -124,7 +134,7 @@
         <img src='books/draft_no4.jpg' alt='Book cover for Draft No. 4'>
         <div class='book-info'>
           <h2>Draft No. 4: On the Writing Process by John McPhee</h2>
-          <p>★★★☆☆</p>
+          <p><b>Rating:</b> ★★★☆☆</p>
           <p>I can't really articulate what it is about this book that didn't do it for me. 
             It was well written, but McPhee's stories from his career and thoughts on the craft of writing 
             weren't super engaging to me. 
@@ -139,10 +149,10 @@
         <img src='books/cultish.jpg' alt='Book cover for Cultish'>
         <div class='book-info'>
           <h2>Cultish: The Language of Fanaticism by Amanda Montell</h2>
-          <p>★★★★☆</p>
+          <p><b>Rating:</b> ★★★★☆</p>
           <p>This book is fun and a quick read (and lead to many wikipedia rabbit holes). I have to ding it one star
-            because it's not really about linguistiics/language/rhetorical tactics. She does go into that, 
-            but it's secondary to the descriptions of the cults she highlights.
+            because it's not really about linguistics/language/rhetorical tactics. She does go into that, 
+            but it's secondary to the descriptions of the cults that she highlights in each chapter.
           </p>
         </div>
       </div>
@@ -151,30 +161,34 @@
         <img src='books/cult_of_we.jpg' alt='Book cover for The Cult of We'>
         <div class='book-info'>
           <h2>The Cult of We: WeWork, Adam Neumann, and the Great Startup Delusion by Eliot Brown & Maureen Farrell</h2>
-          <p>★★★★★</p>
+          <p><b>Rating:</b> ★★★★★</p>
           <p>I have a weird fascination with startup culture, so despite this book being 400
-            pages it was a pretty quick read. The authors do a great job connecting startup 
-            and VC culture to broader changes in society. 
+            pages it was a pretty quick read for me. The authors do a great job connecting startup 
+            and VC culture to broader changes in society. They're both journalists and that really
+            shows in how thorough and well-researched the book is. 
           </p>
         </div>
       </div>
 
       <div class='book-item'>
-        <h2>On Deck:</h2>
-          <p>I haven't been able to get to much reading during the semester but I have some
-              books I'd like to read over break.</p>
-            <ul>
-              <li>Beautiful World, Where Are You? By Salley Rooney</li>
-               <li>Real Life by Brandon Taylor</li>
-            </ul>
-    
-          <p>I realized I went on a big non-fiction kick this summer so I'm hoping to 
-              dive back into some liteature. 
-          </p>
-        </div>
+        <div>
+          <h2>On Deck:</h2>
+            <p>I haven't been able to get to much reading during the semester but I have some
+                books I'd like to read over break.</p>
+              <ul>
+                <li>Beautiful World, Where Are You? By Sally Rooney</li>
+                <li>Real Life by Brandon Taylor</li>
+              </ul>
+      
+            <p>I realized I went on a big non-fiction kick this summer so I'm hoping to 
+                dive back into some liteature. 
+            </p>
+          </div>
+      </div>
 
     </div>
   </main>
+  <script src='javascript/loader.js'></script> 
   <footer>
       <p>Copyright Haley Johnson, 2021</p>
   </footer>

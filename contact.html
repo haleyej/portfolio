@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
     <a class = "skip" href="#contact">Skip to Main Content</a>
+    <div id='loadpage'>
+      <div id="loader"></div>
+    </div>
     <header>
         <h1><a href='index.html'>Haley Johnson</a></h1>
         <nav>
@@ -27,6 +30,7 @@
         </nav>
   </header>
   <main>
+    <div class='contact-container'>
         <h2 class=contact-header>Contact me</h2>
         <div class='form-box' id='contact'>
         <!-- <form action="/action_page.php"> -->
@@ -53,8 +57,10 @@
             <a href="https://www.linkedin.com/in/haley-johnson-b0345a187/">Linkedin</a>.
           </p>
       </div>
+    </div>
         
   </main>
+  <script src='javascript/loader.js'></script> 
   <footer>
     <p>Copyright Haley Johnson, 2021</p>
 </footer>

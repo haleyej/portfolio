@@ -10,54 +10,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Haley Johnson</title>
 </head>
-  <body>
-    <a class = "skip" href="#landing">Skip to Main Content</a>
-    <header>
-      <h1><a href='index.html'>Haley Johnson</a></h1>
-      <nav>
-        <ul class="nav_links">
-        <!-- note to self: fill in links -->
-          <li class="nav_item"><a href="about.html">About</a></li>
-          <li class="nav_item"><a href="projects.html">Projects</a></li>
-          <li class="nav_item"><a href="rabbitholes.html">Book Reviews</a></li>
-          <li class="nav_item"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-  </header>
-  <main>
+<body>
+  <a class = "skip" id='#main'>Skip to Main Content</a>
 
-  <div class='landing' id='landing'>
-    <!-- <div class='text_block_img'> -->
-        <!-- <img src='images/index.jpg' id="landing-img" alt='Me in Seattle'/>   -->
-    <!-- </div> -->
-      <div class='landing-flip-card'>
-        <div class='landing-inner'>
-          <div class='landing-front'>
-            <img src='images/seattle.png'/>
-          </div>
-          <div class='landing-back'>
-            <h1>haley!</h1>
-            <p>bonjour</p>
-          </div>
-        </div>
-        </div>
-      <div class="text_block">
-      <h2>Hello!</h2>
-      <p> I'm Haley! I'm a junior at the University of Michigan studying information science and statistics. 
-          I first started coding in 9th grade when I taught myself how to do fun animations in JavaScript (which
-          are unfortunately (maybe thankfully??) no longer avaliable due my high school deactivating my old Google account). 
-          I love learning about technology and digital culture and getting to create cool stuff! </br> </br>
-          Check out the links to learn more about me. 
-      </p>
-    </div>
-
+  <div id='loadpage'>
+    <div id="loader"></div>
   </div>
 
+    <header>
+      <h1><a href='index.html'>Haley Johnson</a></h1>
+        <nav>
+          <ul class="nav_links">
+          <!-- note to self: fill in links -->
+            <li class="nav_item"><a href="about.html">About</a></li>
+            <li class="nav_item"><a href="projects.html">Projects</a></li>
+            <li class="nav_item"><a href="rabbitholes.html">Book Reviews</a></li>
+            <li class="nav_item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+  <main>
+
+  <div id='flip-container' class='hidden'> 
+    <div id="flip-card" id='main' class='hidden'>
+      <div id="flip-card-inner" class='hidden'>
+        <div id="flip-card-front" class='hidden'>
+          <img src="images/seattle.png" alt="Avatar">
+        </div>
+        <div id="flip-card-back" class='hidden'>
+          <h2>welcome!</h2>
+          <p>I'm Haley! I'm a junior at the University of Michigan studying information science and statistics. 
+            I first started coding in 9th grade when I taught myself how to do fun animations in JavaScript (which
+            are unfortunately (maybe thankfully??) no longer avaliable due my high school deactivating my old Google account). 
+            I love learning about technology and digital culture and getting to create cool stuff! </br> </br>
+            Check out the links to learn more about me. </p>
+        </div>
+      </div>
+      <div class='text_block' id='pls-hover'>
+        Hover on the image to learn more about me!
+      </div>
+    </div>
+  </div>
+
+  <div class='landing' id='landing-container'>
+    <div class='text-block-img'>
+      <img src="images/seattle.png" alt="Avatar" id='landing-image'>
+    </div>
+    <div class='text_block' id='landing-block'>
+      I'm Haley! I'm a junior at the University of Michigan studying information science and statistics. 
+        I first started coding in 9th grade when I taught myself how to do fun animations in JavaScript (which
+        are unfortunately (maybe thankfully??) no longer avaliable due my high school deactivating my old Google account). 
+        I love learning about technology and digital culture and getting to create cool stuff! </br> </br>
+        Check out the links to learn more about me.
+    </div>
+  </div>
 
   </main>
+  <script src='javascript/loader.js'></script> 
+  <script src="javascript/resize.js"></script> 
   <footer>
       <p>Copyright Haley Johnson, 2021</p>
   </footer>

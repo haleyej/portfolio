@@ -9,11 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>About</title>
 </head>
 <body>
     <a class = "skip" href="#haley-facts">Skip to Main Content</a>
+    <div id='loadpage'>
+        <div id="loader"></div>
+      </div>
     <header>
       <h1><a href='index.html'>Haley Johnson</a></h1>
       <nav>
@@ -29,12 +33,15 @@
 
     <main>
         <div class='gallery-container'> 
+            <div class='gallery-text-box' id='parallax'>
+            </div>
             <div class='gallery-text-box'>
                 <img src = 'images/haley.jpg' id="haley" alt='Me on a hiking trip'/>
             <div>
                 <div id='haley-facts'>
                 <h2>About Me</h2>
                 <ul > 
+                    <li><b>pronouns:</b> she/her</li>
                     <li><b>zodiac:</b> aries</li>
                     <li><b>lactose:</b> intolerant</li>
                     <li><b>twitter: </b><a href = "https://twitter.com/halezjohnson">addicted</a></li>
@@ -43,12 +50,12 @@
             </div>
             </div>
         <div class='gallery-text-box' id='bio'>
-            <p>Junior at the University of Michigan studying information science and 
-                statistics. 
-            </p></br>
-            <p>Outside of class you can find me baking, going on lots of runs and managing
-                social media and newsletter strategy for my student paper, The Michigan Daily.
+            <p>Junior at the University of Michigan studying information science, statistics and digital studies. 
             </p>
+            <p>Outside of class you can find me baking, going on lots of runs and managing
+                social media and newsletter strategy for my student paper, The Michigan Daily. </p>
+            <p>The layout of this page is inspired by my beloved twitter.com</p>
+    
         </div>
             <div class='gallery-img'>
                 <img src='images/udub.jpg' alt='Me at the University of Washington this summer'/> 
@@ -60,10 +67,19 @@
                 <img src='images/graduation.jpg' alt='My brother and I at his high school graduation'/> 
             </div>
             <div class='gallery-img'>
+                <img src='images/manistee.jpg' alt='Orchard Beach in Manistee, Michigan'/> 
+            </div>
+            <div class='gallery-img'>
                 <img src='images/chihuly.jpg' alt='Art from the Dave Chihuly Mueseum in Seattle'/> 
             </div>
             <div class='gallery-img'>
                 <img src='images/girlboss.jpg' alt='A cake I made for my friends birthday'/> 
+            </div>
+            <div class='gallery-img'>
+                <img src='images/child.jpg' alt='Me as a child'/> 
+            </div>
+            <div class='gallery-img'>
+                <img src='images/nugget.jpg' alt='My cat nugget'/> 
             </div>
             <div class='gallery-img'>
                 <img src='images/mom.jpg' alt='My mom at the beach'/> 
@@ -74,9 +90,13 @@
             <div class='gallery-img'>
                 <img src='images/law_quad.jpg' alt='Me in the law quad'/> 
             </div>
+            <div class='gallery-img'>
+                <img src='images/lighthouse.jpg' alt='A lighthouse on the beach in Empire, Michigan'/> 
+            </div>
         </div>
 
     </main>
+    <script src='javascript/loader.js'></script> 
     <footer>
         <p>Copyright Haley Johnson, 2021</p>
     </footer>
