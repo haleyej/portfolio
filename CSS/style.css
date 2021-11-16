@@ -429,7 +429,7 @@ input[type=text], select {
 
   #parallax{
     margin-bottom: -5px;
-    background-image: url(../images/manistee.jpg);
+    background-image: url("../images/manistee.jpg");
 
     /* Set a specific height */
     min-height: 80px;
