@@ -313,7 +313,7 @@ s
     padding: 4px;
 }
 
-.hole h2, .gallery-text-box h2, .contact-header, .text_block h2,  .book-item h2{
+.hole h2, .gallery-text-box h2, .contact-header, .text_block h2,  .book-item h2, h2.project-item{
     font-family: 'Raleway', sans-serif;
     margin-bottom: 5px;
     text-decoration: underline #adc0c3 solid 3px;
@@ -406,12 +406,10 @@ input[type=text], select {
     margin-bottom: 50px;
   }  
 
-  h2.project-item{
-      font-family: 'Raleway', sans-serif;
+  h2.project-item{ 
       margin-bottom: 7.5px;
       padding: 20px 20px 20px 20px;
-      text-transform: uppercase;
-  }
+  } 
 
   /* About Page */
 
