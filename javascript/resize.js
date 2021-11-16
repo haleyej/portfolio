@@ -22,7 +22,7 @@ if (reduced_pref.matches == false){
         var width = window.innerWidth
         console.log(width)
         // screen gets larger 
-        if (width >= 750){
+        if (width > 750){
             // show flip card
             flipContainer.classList.remove("hidden")
             flipCard.classList.remove("hidden")
