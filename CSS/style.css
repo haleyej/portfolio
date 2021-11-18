@@ -114,29 +114,29 @@ header a, header a:hover, header a:visited, h1 a{
     margin-left: 20px; 
     /* text-decoration: none; */
     /* -webkit-text-decoration: none; */
-    color: #43434f;
+    color: #414147;
     font-size: 0.9em;
 } 
 
 .nav_item a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #414147;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: #414147;
+    -webkit-text-decoration-style: solid;
+    -webkit-text-decoration-thickness: 2px; 
+}
+
+#current{
+    color: #43434f;
     text-decoration-line: underline;
     text-decoration-color: #43434f;
     text-decoration-style: solid;
     text-decoration-thickness: 2px;
     -webkit-text-decoration-line: underline;
     -webkit-text-decoration-color: #43434f;
-    -webkit-text-decoration-style: solid;
-    -webkit-text-decoration-thickness: 2px; 
-}
-
-#current{
-    color: #2d2d6e;
-    text-decoration-line: underline;
-    text-decoration-color: #2d2d6e;
-    text-decoration-style: solid;
-    text-decoration-thickness: 2px;
-    -webkit-text-decoration-line: underline;
-    -webkit-text-decoration-color: #2d2d6e;
     -webkit-text-decoration-style: solid;
     -webkit-text-decoration-thickness: 2px; 
 }
@@ -605,6 +605,10 @@ footer{
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+
+    .nav_links li{
+        justify-items: flex-end;
     }
 
     .nav_item a{
