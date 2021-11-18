@@ -14,9 +14,12 @@ var image = document.querySelector("#landing-image")
 var textBox = document.querySelector("#landing-block")
 
 // if we prefer reduced motion
-var reduced_pref = window.matchMedia('(prefers-reduced-motion: reduce)');
+var reducedPref = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-if (reduced_pref.matches == false){
+// skip to content button
+var skipButton = document.querySelector("#landing-skip")
+
+if (reducedPref.matches == false){
     // on load
     window.addEventListener('load', function(){
         var width = window.innerWidth
@@ -33,6 +36,8 @@ if (reduced_pref.matches == false){
             container.classList.add("hidden")
             image.classList.add("hidden")
             textBox.classList.add("hidden")
+            // adjust skip to content
+            skipButton.setAttribute("href", "#flip-card-front")
         }
     })
 
@@ -52,6 +57,8 @@ if (reduced_pref.matches == false){
             container.classList.add("hidden")
             image.classList.add("hidden")
             textBox.classList.add("hidden")
+            // adjust skip tto conttent
+            skipButton.setAttribute("href", "#flip-card-front")
         }
         else {
             // hide flip card
@@ -64,6 +71,8 @@ if (reduced_pref.matches == false){
             container.classList.remove("hidden")
             image.classList.remove("hidden")
             textBox.classList.remove('hidden')
+            // adjust skip to content
+            skipButton.setAttribute("href", "#landing-image")
             }
     })
 }
