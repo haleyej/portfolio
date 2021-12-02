@@ -26,7 +26,7 @@ body{
     z-index: 1;
     width: 125px;
     height: 125px;
-    margin: -76px 0 0 -76px;
+    margin: -62.5px 0 0 -62.5px; 
     border: 10px solid #f3f3f3;
     border-radius: 50%;
     border-top: 10px solid #37749c;
@@ -71,7 +71,7 @@ body > header{
 
 p + p {
     margin-top: 10px;
-}
+} 
 
 header{
     background: #AABFB8;
@@ -102,14 +102,18 @@ header a, header a:hover, header a:visited, h1 a{
 }
 
 .nav_links{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     text-align: right;
     line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: left;
-    justify-content: center;
+    justify-content: end;
+    align-items: center;
 }
+
+#home{
+    grid-column: 1 / -1;
+} 
 
 .nav_item a{
     margin-left: 20px; 
@@ -194,7 +198,8 @@ a.skip{
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
-  #flip-card:hover #flip-card-inner {
+  #flip-card:hover #flip-card-inner,
+  #flip-card:focus #flip-card-inner{
     transform: rotateY(180deg);
   }
   
@@ -251,8 +256,13 @@ a.skip{
       object-fit: cover;
   }
 
-  #flip-card-back p, #flip-card-back h2{
+ #flip-card-back h2{
       padding: 30px;
+      margin-bottom: auto;
+  }
+
+  #flip-card-back p{
+      padding: 10px 30px;
   }
 
   #pls-hover{
@@ -314,11 +324,11 @@ a.skip{
     border-radius: 5px;
 }
 
- .hole li, .gallery-text-box li{
+ .hole li, .gallery-text-box li, .project-item li{
     line-height: 1.5em;
 } 
 s
-.hole ul, .book-item ul {
+.hole ul, .book-item ul, .project-item ul{
     margin-left: 20px;
     list-style: circle;
 }
@@ -393,7 +403,7 @@ input[type=text], select {
   
   input[type=submit] {
     width: 100%;
-    background-color: #3e94bd;
+    background-color: #2b6e8d;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -407,12 +417,16 @@ input[type=text], select {
   }
   
   input[type=submit]:hover {
-    background-color: #386a81;
+    background-color: #148dc5;
   }
 
   #additional-contact{
       margin-top: -40px;
       font-size: 0.85em;
+  }
+
+  #additional-contact p{
+      margin-top: 0px;
   }
 
   #message{
@@ -436,7 +450,102 @@ input[type=text], select {
       padding: 20px 20px 20px 20px;
   } 
 
-  /* About Page */
+.project-item ::marker{
+    list-style: none;
+}
+
+#slideshow{
+    margin-top: -42.5px;
+}
+
+#slideshow p{
+    margin-bottom: 15px;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    box-sizing:border-box;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    box-sizing:border-box;
+}
+
+.mySlides img{
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+}
+
+/* Caption text */
+.text {
+    font-size: 15px;
+    padding: 10px 10px;
+    position: absolute;
+    margin-top: -5px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+
+#dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 
   .gallery-container{
       display: grid;
@@ -517,6 +626,7 @@ input[type=text], select {
       padding: 15px;
       margin-top: -5px;
       text-align: left;
+      justify-content: left;
   }
 
 /* Footer */
@@ -536,19 +646,18 @@ footer{
 
   .books-container{
       display: grid;
-      grid-template-rows: repeat(12, auto);
+      /* grid-template-rows: repeat(12, content); */
       grid-template-columns: 80%;
       margin-top: 50px;
       justify-content: center;
-      align-items: center;
       grid-gap: 50px;
   }
 
   .book-item{
-      display: flex;
+      display: flex; 
       flex-direction: column;
-      align-content: center;
-      justify-content: center;
+      /* align-items: center;
+      justify-items: center;  */
       background: #fff;
       border-radius: 5px;
       padding: 20px; 
@@ -592,6 +701,14 @@ footer{
     #loader, #loadpage{
         display: none;
     }
+
+    #parallax{
+        margin-bottom: -5px;
+        background-image: url("../images/manistee.jpg");
+        background-attachment: scroll;
+    }
+
+
 } 
 
 @media screen and (min-width: 750px){
@@ -603,6 +720,10 @@ footer{
     }
 
     .nav_links{
+        display: flex; 
+        flex-wrap: wrap;
+        align-items: left;
+        justify-content: center;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -636,9 +757,14 @@ footer{
 
     #haley{
         height: 200px;
+        margin-top: -100px;
     }
 
     .haley-facts h2, .haley-facts ul li{
+        text-align: left;
+    }
+
+    #bio{
         text-align: left;
     }
 
@@ -669,12 +795,152 @@ footer{
         margin: auto;
     }
 
-    /* modify projects page */
+    
 
 } 
 
-  
+@media screen and (min-width: 1150px){
+
+    /* modify nav */
+    header{
+        padding: 30px;
+    }
+
+    .nav_links{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_links li{
+        justify-items: flex-end;
+    }
+
+    .nav_item a{
+        font-size: 1.1em;
+        line-height: 1.6em;
+    }
+
+    header > h1{
+        font-size: 2.5em;
+    }
+
+    /* fix skip to content */
+    a.skip{
+        left: 20px;
+        padding: 10px;
+    }
+
+    /* modify landing page */
+
+    #pls-hover{
+        font-size: 1em;
+    }
+
+
+    /* modify about page */
+    .gallery-container{
+        grid-template-columns: repeat(3, 33%);
+        max-width: 1000px;
+    }
+
+    .gallery-text-box{
+        justify-content: center;
+    }
+
+    .gallery-text-box h2, .gallery-text-box ul{
+        text-align: left;
+    }
+    
+    .gallery-text-box h2{
+        font-size: 1.5em;
+    }
+
+    .gallery-text-box ul li, #bio{
+        font-size: 1.05em;
+    }
+
+    #bio p{
+        padding: 10px;
+    }
+
+    #parallax{
+        min-height: 120px;
+    }
+
+    #haley{
+        height: 250px;
+        margin-right: 50px;
+    }
+
+    /* .gallery-img:nth-child(odd){
+        grid-column: 2 / 4;
+    }
+
+    .gallery-img:nth-child(even){
+        grid-column: 2 / 3;
+    }  */
+
+    .gallery-img:hover{
+        border-top-right-radius: 100px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 0px;
+    }
+
+    /* modify projects page */
+
+    .project-item{
+        max-width: 800px;
+        font-size: 1.15em;
+    }
+
+    /* modify books page */
+
+    .books-container{
+        grid-template-columns: 40% 40%;
+        /* grid-template-rows: repeat(6, auto); */
+        margin-bottom: 50px;
+        align-items: flex-start;
+        grid-gap: 75px;
+    }
+
+    .book-item h2{
+        text-align: center;
+    }
+
+    .book-item{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        max-width: 500px;
+        margin-top: 0px;
+    }
+
+    #rabbit-holes, #on-deck{
+        grid-row: 1 / 2;
+        width: 100%;
+        text-align: left;
+    }
+
+}
+
+  @-webkit-keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    } 

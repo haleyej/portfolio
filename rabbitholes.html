@@ -18,11 +18,11 @@
       <div id="loader"></div>
     </div>
     <header>
-    <h1><a href='index.html'>Haley Johnson</a></h1>
+    <h1>Haley Johnson</h1>
       <nav>
         <ul class="nav_links">
         <!-- note to self: fill in links -->
-          <li class="nav_item"><a href="index.html">Home</a></li>
+          <li class="nav_item" id='home'><a href="index.html">Home</a></li>
           <li class="nav_item"><a href="about.html">About</a></li>
           <li class="nav_item"><a href="projects.html">Projects</a></li>
           <li class="nav_item"><a id='current' href="rabbitholes.html">Book Reviews</a></li>
@@ -36,13 +36,16 @@
         <div>
           <h2>Reading:</h2>
             <p>This summer I decided to read a book every week! I ended up only missing about one week of reading, which considering
-            how much I worked and traveled is pretty good! Here are my reads (mostly in order): 
+            how much I worked and traveled is pretty good! I purchased most of these books from Literati, my favorite bookstore in Ann Arbor.
+            </p>
+            <p>
+            Here are my reads (mostly in order): </p>
           </p>
         </div>
       </div>
 
       <div class='book-item'>
-        <img src='books/normal_people.jpg' alt='Book cover for Normal People'>
+        <img src='books/normal_people.jpg' id = 'book-img' alt='Book cover for Normal People'>
         <div class='book-info'>
           <h2>Normal People by Sally Rooney</h2>
           <p><b>Rating:</b> ★★★★★</p>
@@ -171,7 +174,7 @@
         </div>
       </div>
 
-      <div class='book-item'>
+      <div class='book-item' id='on-deck'>
         <div>
           <h2>On Deck:</h2>
             <p>I haven't been able to get to much reading during the semester but I have some
@@ -189,7 +192,15 @@
 
     </div>
   </main>
-  <script src='javascript/loader.js'></script> 
+  <script src='javascript/loader.js'></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFJLZ87KTL"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HFJLZ87KTL');
+  </script> 
   <footer>
       <p>Copyright Haley Johnson, 2021</p>
   </footer>

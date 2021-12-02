@@ -21,10 +21,10 @@
   </div>
 
     <header>
-      <h1><a href='index.html'>Haley Johnson</a></h1>
+      <h1>Haley Johnson</h1>
         <nav>
           <ul class="nav_links">
-            <li class="nav_item"><a id='current' href="index.html">Home</a></li> 
+            <li class="nav_item" id='home'><a id='current' href="index.html">Home</a></li> 
             <li class="nav_item"><a href="about.html">About</a></li>
             <li class="nav_item"><a href="projects.html">Projects</a></li>
             <li class="nav_item"><a href="rabbitholes.html">Book Reviews</a></li>
@@ -35,18 +35,39 @@
   <main>
 
   <div id='flip-container' class='hidden'> 
-    <div id="flip-card" id='main' class='hidden'>
+    <div id="flip-card" id='main' class='hidden' tabindex="0">
       <div id="flip-card-inner" class='hidden'>
         <div id="flip-card-front" class='hidden'>
           <img src="images/seattle.png" alt="Avatar">
         </div>
         <div id="flip-card-back" class='hidden'>
           <h2>welcome!</h2>
-          <p>I'm Haley! I'm a junior at the University of Michigan studying information science and statistics. 
+          <p tabindex='0'>
+            I'm Haley! I'm a junior at the University of Michigan majoring in information science
+            with minors in statistics and digital studes. I love that I get to study technology, 
+            data science, and digital culture – I really struggled to choose a major (in an alternate 
+            universe I was a data scientist or pre-health or pre-law or.....) but I'm glad
+            I landed on this. 
+          </p>
+          <p tabindex='0'>
+            I am originally from Manistee, Michigan, a small town up north. I grew up a few blocks
+            away from Lake Michigan and spent my childhood swimming, hiking, and watching lots of sunsets
+            on the beach. I firmly believe Northwest Michigan is one of the best places in the world to live.
+          </p>
+          <p>
             I first started coding in 9th grade when I taught myself how to do fun animations in JavaScript (which
             are unfortunately (maybe thankfully??) no longer avaliable due my high school deactivating my old Google account). 
-            I love learning about technology and digital culture and getting to create cool stuff! </br> </br>
-            Check out the links to learn more about me. </p>
+            I've always loved creating things and diving into personal projects, but now I create things
+            that are slightly more advanced than JavaScript animations.
+          </p>
+          <p tabindex='0'>
+            Next summer, I will be joining Meta (formerly known as Facebook) as a 
+            product growth analyst intern in their Menlo Park office. I can't wait to combine my data science skills
+            and product sense to improve user experience. 
+          </p>
+          <p tabindex='0'>
+            Check out the links to learn more about me!
+          </p>
         </div>
       </div>
       <div class='text_block' id='pls-hover'>
@@ -60,17 +81,46 @@
       <img src="images/seattle.png" alt="Avatar" id='landing-image'>
     </div>
     <div class='text_block' id='landing-block'>
-      I'm Haley! I'm a junior at the University of Michigan studying information science and statistics. 
+      <p>
+        I'm Haley! I'm a junior at the University of Michigan majoring in information science
+        with minors in statistics and digital studes. I love that I get to study technology, 
+        data science, and digital culture – I really struggled to choose a major in an alternate 
+        universe I was a data scientist or pre-health or pre-law or.....)
+        but I'm glad I landed on this. 
+      </p>
+      <p>
+        I am originally from Manistee, Michigan, a small town up north. I grew up a few blocks
+        away from Lake Michigan and spent my childhood swimming, hiking, and watching lots of sunsets
+        on the beach. I firmly believe Northwest Michigan is one of the best places in the world to live.
+      </p>
+      <p>
         I first started coding in 9th grade when I taught myself how to do fun animations in JavaScript (which
         are unfortunately (maybe thankfully??) no longer avaliable due my high school deactivating my old Google account). 
-        I love learning about technology and digital culture and getting to create cool stuff! </br> </br>
-        Check out the links to learn more about me.
+        I've always loved creating things and diving into personal projects, but now I create things
+        that are slightly more advanced than JavaScript animations.
+      </p>
+      <p>
+        Next summer, I will be joining Meta (formerly known as Facebook) as a 
+        product growth analyst intern in their Menlo Park office. I can't wait to combine my data science skills
+        and product sense to improve user experience. 
+      </p>
+      <p>
+        Check out the links to learn more about me!
+      </p>
     </div>
   </div>
 
   </main>
   <script src='javascript/loader.js'></script> 
   <script src="javascript/resize.js"></script> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFJLZ87KTL"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HFJLZ87KTL');
+  </script> 
   <footer>
       <p>Copyright Haley Johnson, 2021</p>
   </footer>
