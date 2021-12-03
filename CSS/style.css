@@ -902,7 +902,7 @@ footer{
         /* grid-template-rows: repeat(6, auto); */
         margin-bottom: 50px;
         align-items: flex-start;
-        grid-gap: 75px;
+        grid-gap: 60px;
     }
 
     .book-item h2{
