@@ -28,10 +28,10 @@ function showSlides(n) {
 }
 
 // accesibility
-slides.addEventListener('keydown'), function(event){
-  if (event.keyCode == 9 & slideIndex <= slides.length)
-    {
-      plusSlides(2)
-      currentSlide(2)
-    }
-}
+// slides.addEventListener('onkeydown'), function(event){
+//   if (event.keyCode == 39 & slideIndex <= slides.length)
+//     {
+//       plusSlides(2)
+//       currentSlide(2)
+//     }
+// }

@@ -795,7 +795,9 @@ footer{
         margin: auto;
     }
 
-    
+    .projects-container{
+        flex-direction: row-reverse;
+    }
 
 } 
 
@@ -873,14 +875,6 @@ footer{
         margin-right: 50px;
     }
 
-    /* .gallery-img:nth-child(odd){
-        grid-column: 2 / 4;
-    }
-
-    .gallery-img:nth-child(even){
-        grid-column: 2 / 3;
-    }  */
-
     .gallery-img:hover{
         border-top-right-radius: 100px;
         border-top-left-radius: 0px;
@@ -940,7 +934,7 @@ footer{
     to {opacity: 1}
 }
 
-    @keyframes fade {
+ @keyframes fade {
         from {opacity: .4}
         to {opacity: 1}
     } 
