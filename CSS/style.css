@@ -487,7 +487,6 @@ input[type=text], select {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    /* color: rgb(255, 255, 255); */
     color: #00ddff;
     font-weight: bold;
     font-size: 18px;
@@ -505,7 +504,6 @@ input[type=text], select {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-    color: #fff;
 }
 
 /* Caption text */
