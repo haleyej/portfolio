@@ -794,10 +794,6 @@ footer{
         margin: auto;
     }
 
-    .projects-container{
-        flex-direction: row-reverse;
-    }
-
 } 
 
 @media screen and (min-width: 1150px){
@@ -864,12 +860,48 @@ footer{
         border-bottom-right-radius: 0px;
     }
 
-    /* modify projects page */
+    /* #projects-container{
+        margin: 0px;
+    } */
 
-    .project-item{
-        max-width: 800px;
-        font-size: 1.15em;
+    .project-container{
+        display: grid;
+        grid-template-columns: 2.5fr 7fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        max-width: 700px;
+        margin: auto;
     }
+
+    h2.project-item{
+        grid-column: 1 / span 1;
+        width: 100%;
+        align-self: start;
+        margin-top: 0px;
+    }
+
+    div.project-item{
+        /* grid-row: 2 / 3; */
+        grid-column: 2 / 4;
+        width: 100%;
+        align-self: start;
+        font-size: 1.15em;
+        margin-left: 50px;
+        margin-bottom: 100px;
+    }
+
+    #slideshow-container{
+        grid-template-rows: auto auto;
+    }
+
+
+    #slideshow{
+        grid-row: 2 / 3; 
+    }
+
+
+
 
     /* modify books page */
 
