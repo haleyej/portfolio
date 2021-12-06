@@ -870,7 +870,7 @@ footer{
         grid-template-rows: auto;
         justify-content: center;
         align-items: center;
-        max-width: 700px;
+        max-width: 900px;
         margin: auto;
     }
 
@@ -898,6 +898,7 @@ footer{
 
     #slideshow{
         grid-row: 2 / 3; 
+        margin-top: -90px;
     }
 
 
