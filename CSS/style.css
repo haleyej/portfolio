@@ -692,24 +692,6 @@ footer{
   }
 
 
-  @media screen and (prefers-reduced-motion: reduce){
-    #haley:hover{
-        transform: none;
-    }
-
-    #loader, #loadpage{
-        display: none;
-    }
-
-    #parallax{
-        margin-bottom: -5px;
-        background-image: url("../images/manistee.jpg");
-        background-attachment: scroll;
-    }
-
-
-} 
-
 @media screen and (min-width: 750px){
 
     /* modify header */
@@ -934,6 +916,7 @@ footer{
 
 }
 
+/* animations */
   @-webkit-keyframes spin{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -953,3 +936,28 @@ footer{
         from {opacity: .4}
         to {opacity: 1}
     } 
+
+/* prefers reduced motion */
+
+@media screen and (prefers-reduced-motion: reduce){
+    #haley:hover{
+        transform: none;
+    }
+
+    #loader, #loadpage{
+        display: none;
+    }
+
+    #parallax{
+        margin-bottom: -5px;
+        background-image: url("../images/manistee.jpg");
+        background-attachment: scroll;
+    }
+
+    .fade {
+        -webkit-animation: none;
+        animation: none;
+    }
+
+
+} 
